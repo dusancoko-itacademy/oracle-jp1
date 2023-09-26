@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<questions>
+    <question id="1">
+        <text>Given the code fragment: What is the result?</text>
+        <code>int x = 100;
+int a = x++;
+int b = ++x;
+int c = x++;
+int d = ( a &lt; b ) ? ( a &lt; c ) ? a : ( b &lt; c ) ? b : c;
+System.out.println(d);</code>
+        <answers>
+               <answer id="a">103</answer>
+              <answer id="b">101</answer>
+              <answer id="c">102</answer>
+              <answer id="d">100</answer>
+              <answer id="d">Compilation Fails</answer>
+        </answers>
+        <correct>d</correct>
+   </question>
+
+   <question id="2">
+    <text>Which of the following data types can hold a decimal value?</text>
+    <answers>
+        <answer id="a">int</answer>
+        <answer id="b">double</answer>
+        <answer id="c">char</answer>
+        <answer id="d">boolean</answer>
+    </answers>
+    <correct>b</correct>
+    </question>
+
+    <question id="3">
+        <text>Given the code fragment, what is the result?</text>
+        <code>public class Test {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+        int z = ++x + y--;
+        System.out.println(x + "," + y + "," + z);
+    }
+}</code>
+        <answers>
+            <answer id="a">11,19,31</answer>
+            <answer id="b">10,20,30</answer>
+            <answer id="c">11,20,31</answer>
+            <answer id="d">10,19,30</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="4">
+        <text>Which of the following are true about Java keywords?</text>
+        <answers>
+            <answer id="a">They can be used as identifiers.</answer>
+            <answer id="b">They are not case-sensitive.</answer>
+            <answer id="c">They can be used as method names.</answer>
+            <answer id="d">They are reserved words.</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="5">
+        <text>What will be the output of the code below?</text>
+        <code>public class Main {
+    public static void main(String[] args) {
+        String s1 = "Java";
+        String s2 = "Java";
+        String s3 = new String("Java");
+        System.out.println(s1 == s2);
+        System.out.println(s1 == s3);
+    }
+}</code>
+        <answers>
+            <answer id="a">true false</answer>
+            <answer id="b">false true</answer>
+            <answer id="c">true true</answer>
+            <answer id="d">false false</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+   
+    <question id="6">
+        <text>Which of the following is the correct way to declare an array in Java?</text>
+        <answers>
+            <answer id="a">int array[];</answer>
+            <answer id="b">int[] array;</answer>
+            <answer id="c">array int[];</answer>
+            <answer id="d">Both a and b are correct.</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="7">
+        <text>What will be the output of the following code?</text>
+        <code>import java.util.ArrayList;
+import java.util.List;
+
+public class Test {
+    public static void main(String[] args) {
+        List&lt;String&gt; list = new ArrayList&lt;&gt;();
+        list.add("A");
+        list.add("B");
+        list.add("C");
+        System.out.println(list.size());
+    }
+}</code>
+        <answers>
+            <answer id="a">0</answer>
+            <answer id="b">1</answer>
+            <answer id="c">2</answer>
+            <answer id="d">3</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="8">
+        <text>Which of the following is true regarding Maps in Java?</text>
+        <answers>
+            <answer id="a">Maps can contain duplicate keys.</answer>
+            <answer id="b">Maps can contain duplicate values.</answer>
+            <answer id="c">Maps can contain both duplicate keys and values.</answer>
+            <answer id="d">None of the above.</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="9">
+        <text>Which of the following correctly demonstrates simple class inheritance in Java?</text>
+        <answers>
+            <answer id="a">class B extends A {}</answer>
+            <answer id="b">class A extends B {}</answer>
+            <answer id="c">class A: B {}</answer>
+            <answer id="d">None of the above.</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="10">
+        <text>Which keyword is used to throw an exception manually?</text>
+        <answers>
+            <answer id="a">throws</answer>
+            <answer id="b">exception</answer>
+            <answer id="c">throw</answer>
+            <answer id="d">catch</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+    
+    <question id="11">
+        <text>Which of the following blocks will always execute in a try-catch-finally structure?</text>
+        <answers>
+            <answer id="a">try</answer>
+            <answer id="b">catch</answer>
+            <answer id="c">finally</answer>
+            <answer id="d">None of the above.</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+    
+    <question id="12">
+        <text>Which of the following methods belongs to the Throwable class?</text>
+        <answers>
+            <answer id="a">printStackTrace()</answer>
+            <answer id="b">getMessage()</answer>
+            <answer id="c">toString()</answer>
+            <answer id="d">All of the above.</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="13">
+        <text>Which of the following is not a valid way to create an instance of a Thread?</text>
+        <answers>
+            <answer id="a">Extending Thread class.</answer>
+            <answer id="b">Implementing Runnable interface.</answer>
+            <answer id="c">Implementing Callable interface.</answer>
+            <answer id="d">None of the above.</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="14">
+        <text>Which of the following collections does not implement the List interface?</text>
+        <answers>
+            <answer id="a">ArrayList</answer>
+            <answer id="b">HashSet</answer>
+            <answer id="c">LinkedList</answer>
+            <answer id="d">Vector</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="15">
+        <text>What will be the output of the following code?</text>
+        <code>public class Test {
+    public static void main(String[] args) {
+        int[][] array = {{1, 2}, {3, 4}, {5, 6}};
+        System.out.println(array[1][1]);
+    }
+}</code>
+        <answers>
+            <answer id="a">1</answer>
+            <answer id="b">2</answer>
+            <answer id="c">3</answer>
+            <answer id="d">4</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="15">
+        <text>Which of the following is not a type of constructor in Java?</text>
+        <answers>
+            <answer id="a">Method constructor</answer>
+            <answer id="b">Default constructor</answer>
+            <answer id="c">No-argument constructor</answer>
+            <answer id="d">Parameterized constructor</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="16">
+        <text>Which of the following is a valid abstract method declaration?</text>
+        <answers>
+            <answer id="a">public abstract void myMethod();</answer>
+            <answer id="b">public void abstract myMethod();</answer>
+            <answer id="c">public abstract myMethod();</answer>
+            <answer id="d">public void myMethod() abstract;</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="17">
+        <text>What is the result of the following code snippet?</text>
+        <code>String str = "Hello";
+str.concat(" World");
+System.out.println(str);</code>
+        <answers>
+            <answer id="a">Hello World</answer>
+            <answer id="b">Hello</answer>
+            <answer id="c">World</answer>
+            <answer id="d">Null</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="18">
+        <text>Which of the following is the correct way to declare an enumeration?</text>
+        <answers>
+            <answer id="a">Days enum {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY}</answer>
+            <answer id="b">enumeration Days {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY}</answer>
+            <answer id="c">enum Days {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY}</answer>
+            <answer id="d">All of the above.</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="19">
+        <text>What will be the result of Math.ceil(4.7)?</text>
+        <answers>
+            <answer id="a">4</answer>
+            <answer id="b">5</answer>
+            <answer id="c">4.7</answer>
+            <answer id="d">0</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="20">
+        <text>When does the Java Virtual Machine throw an OutOfMemoryError?</text>
+        <answers>
+            <answer id="a">When the heap is full and garbage collection cannot free up any space.</answer>
+            <answer id="b">When an attempt is made to create an array with a negative size.</answer>
+            <answer id="c">When an application tries to load a class and the class does not exist.</answer>
+            <answer id="d">All of the above.</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+
+    <question id="21">
+        <text>Which area in Java memory is allocated for instance variables?</text>
+        <answers>
+            <answer id="a">Heap</answer>
+            <answer id="b">Stack</answer>
+            <answer id="c">Method Area</answer>
+            <answer id="d">Native Method Stack</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="22">
+        <text>How many times will the following loop execute?</text>
+        <code>int x = 0;
+while(x &lt; 10) {
+    ++x;
+}</code>
+        <answers>
+            <answer id="a">9</answer>
+            <answer id="b">10</answer>
+            <answer id="c">11</answer>
+            <answer id="d">Infinite</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="23">
+        <text>What will be the output of the following code?</text>
+        <code>StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb);</code>
+        <answers>
+            <answer id="a">Hello</answer>
+            <answer id="b"> World</answer>
+            <answer id="c">Hello World</answer>
+            <answer id="d">Compilation Error</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+    
+    <question id="24">
+        <text>Which of the following methods is used to obtain the character at a specific index within a String?</text>
+        <answers>
+            <answer id="a">charAt()</answer>
+            <answer id="b">getChar()</answer>
+            <answer id="c">indexOf()</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="25">
+        <text>What is the output of the following code?</text>
+        <code>int a = 5, b = 8;
+int c = (a &gt; b) ? a : b;
+System.out.println(c);</code>
+        <answers>
+            <answer id="a">5</answer>
+            <answer id="b">8</answer>
+            <answer id="c">0</answer>
+            <answer id="d">Compilation Error</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="26">
+        <text>Which exception is thrown when trying to access an invalid index of an array?</text>
+        <answers>
+            <answer id="a">ArrayIndexOutOfBoundsException</answer>
+            <answer id="b">IndexOutOfBoundsException</answer>
+            <answer id="c">IllegalArgumentException</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="27">
+        <text>Which exception is thrown when attempting to access a method on a null reference?</text>
+        <answers>
+            <answer id="a">NullReferenceException</answer>
+            <answer id="b">NullPointerException</answer>
+            <answer id="c">IllegalStateException</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="28">
+        <text>Which exception is thrown when passing illegal arguments to a method?</text>
+        <answers>
+            <answer id="a">IllegalStateException</answer>
+            <answer id="b">IllegalArgumentException</answer>
+            <answer id="c">IllegalAccessException</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="29">
+        <text>Which method is used to get the value associated with a specific key in a Map?</text>
+        <answers>
+            <answer id="a">getValue()</answer>
+            <answer id="b">getKey()</answer>
+            <answer id="c">get()</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+    
+    <question id="30">
+        <text>Which of the following is a valid method of the Iterator interface?</text>
+        <answers>
+            <answer id="a">hasNext()</answer>
+            <answer id="b">next()</answer>
+            <answer id="c">remove()</answer>
+            <answer id="d">All of the above</answer>
+        </answers>
+        <correct>d</correct>
+    </question>
+    
+    <question id="31">
+        <text>What is the result of the following code snippet?</text>
+        <code>String str = "Java";
+StringBuilder sb = new StringBuilder(str);
+sb.reverse();
+str = sb.toString();
+System.out.println(str);</code>
+        <answers>
+            <answer id="a">Java</answer>
+            <answer id="b">avaj</answer>
+            <answer id="c">avaJ</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+    
+    <question id="32">
+        <text>Which of the following loops will execute at least once?</text>
+        <answers>
+            <answer id="a">for loop</answer>
+            <answer id="b">do-while loop</answer>
+            <answer id="c">while loop</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="33">
+        <text>Which method can be used to convert a StringBuilder object to a String object?</text>
+        <answers>
+            <answer id="a">toString()</answer>
+            <answer id="b">getString()</answer>
+            <answer id="c">toStr()</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="34">
+        <text>What will be the result of the expression 5 + 8 * 3 - 2 / 2?</text>
+        <answers>
+            <answer id="a">25</answer>
+            <answer id="b">24</answer>
+            <answer id="c">26</answer>
+            <answer id="d">27</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="36">
+        <text>What is the value of the expression (true || false &amp;&amp; false)?</text>
+        <answers>
+            <answer id="a">true</answer>
+            <answer id="b">false</answer>
+            <answer id="c">Compilation error</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="37">
+        <text>What is the result of the bitwise operation 5 &amp; 3?</text>
+        <answers>
+            <answer id="a">0</answer>
+            <answer id="b">1</answer>
+            <answer id="c">7</answer>
+            <answer id="d">8</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+    <question id="38">
+        <text>What is the result of the following expression? 7 ^ 3</text>
+        <answers>
+            <answer id="a">4</answer>
+            <answer id="b">5</answer>
+            <answer id="c">10</answer>
+            <answer id="d">0</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="39">
+        <text>Which exception is thrown by the Integer.parseInt method when it fails to parse a string as an integer?</text>
+        <answers>
+            <answer id="a">ParseException</answer>
+            <answer id="b">IllegalArgumentException</answer>
+            <answer id="c">NumberFormatException</answer>
+            <answer id="d">None of the above</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="40">
+        <text>In the following code snippet, what is the result of attempting to access a protected method from another package?</text>
+        <code>package com.example;
+public class MyClass {
+    protected void myMethod() {
+        System.out.println("Hello, World!");
+    }
+}
+----------------------------
+package com.another;
+import com.example.MyClass;
+public class AnotherClass extends MyClass {
+    public void anotherMethod() {
+        myMethod();
+    }
+}</code>
+        <answers>
+            <answer id="a">The code compiles and executes successfully.</answer>
+            <answer id="b">The code throws a compilation error.</answer>
+            <answer id="c">The code throws a runtime exception.</answer>
+            <answer id="d">The code executes but does not print anything.</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="41">
+        <text>Which class can be used in Java to format a date into a specific string format?</text>
+        <answers>
+            <answer id="a">DateFormat</answer>
+            <answer id="b">DateFormatter</answer>
+            <answer id="c">SimpleDateFormat</answer>
+            <answer id="d">Date</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+    
+    <question id="42">
+        <text>What is the result of the following code snippet?</text>
+        <code>
+        DecimalFormat df = new DecimalFormat("#.##");
+        double number = 123.456789;
+        String result = df.format(number);
+        System.out.println(result);
+        </code>
+        <answers>
+            <answer id="a">123.45</answer>
+            <answer id="b">123.46</answer>
+            <answer id="c">123</answer>
+            <answer id="d">123.456</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+
+    <question id="43">
+        <text>Consider the following code snippet. What will be the output when method main is run?</text>
+        <code>public class Test {
+    public static void main(String[] args) {
+        int a = 10;
+        StringBuffer b = new StringBuffer("Hello");
+        modify(a, b);
+        System.out.println(a + ", " + b);
+    }
+
+    public static void modify(int x, StringBuffer y) {
+        x = x + 10;
+        y.append(" World");
+    }
+}</code>
+        <answers>
+            <answer id="a">10, Hello</answer>
+            <answer id="b">20, Hello</answer>
+            <answer id="c">10, Hello World</answer>
+            <answer id="d">20, Hello World</answer>
+        </answers>
+        <correct>c</correct>
+    </question>
+
+    <question id="44">
+        <text>Consider the following code snippet. Select the correct lambda expression to filter and print the numbers greater than 5 from the list.</text>
+        <code>List&lt;Integer&gt; numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+numbers.stream()
+        .filter( /* insert lambda expression here */ )
+        .forEach(System.out::println);</code>
+        <answers>
+            <answer id="a">x -&gt; x &gt; 5</answer>
+            <answer id="b">x -&gt; x &lt; 5</answer>
+            <answer id="c">(x) -&gt; { return x &gt; 5; }</answer>
+            <answer id="d">x -&gt; { x &gt; 5 }</answer>
+        </answers>
+        <correct>a</correct>
+    </question>
+    
+    <question id="45">
+        <text>Given the following code snippet, what lambda expression should replace the comment to ensure that only strings with length greater than 3 are printed?</text>
+        <code>List&lt;String&gt; words = Arrays.asList("Java", "Python", "C", "C++", "JavaScript");
+words.stream()
+        .filter( /* insert lambda expression here */ )
+        .forEach(System.out::println);</code>
+        <answers>
+            <answer id="a">s -&gt; s.length() &lt; 3</answer>
+            <answer id="b">s -&gt; s.length() &gt; 3</answer>
+            <answer id="c">s -&gt; return s.length() &gt; 3;</answer>
+            <answer id="d">s -&gt; { s.length() &gt; 3 }</answer>
+        </answers>
+        <correct>b</correct>
+    </question>
+    
+</questions>
