@@ -69,7 +69,7 @@ async function startQuiz() {
     }
 
     // Timer
-    let endTime = new Date().getTime() + 70 * 60 * 1000;
+    let endTime = new Date().getTime() + 75 * 60 * 1000;
 
     function updateTimer() {
         let now = new Date().getTime();
